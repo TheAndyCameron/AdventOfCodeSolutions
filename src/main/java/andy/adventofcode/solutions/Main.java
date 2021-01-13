@@ -2,11 +2,13 @@ package andy.adventofcode.solutions;
 
 import andy.adventofcode.solutions.one.ExpenseReportFixer;
 import andy.adventofcode.solutions.seven.BagTracker;
+import andy.adventofcode.solutions.two.PasswordValidator;
 
 public class Main {
 
     private static final String PATH_TO_INPUTS = "./resources/input_files/";
     private static final String INPUT_FILE_1 = PATH_TO_INPUTS + "input1.txt";
+    private static final String INPUT_FILE_2 = PATH_TO_INPUTS + "input2.txt";
     private static final String INPUT_FILE_7 = PATH_TO_INPUTS + "input7.txt";
 
 
@@ -20,7 +22,13 @@ public class Main {
         int productOfThree = expenseReportFixer.productOf3NumbersSummingTo2020();
         System.out.println("The product of the 3 numbers that sum to 2020 is " + productOfThree);
 
-
+        // Problem 2
+        System.out.println("\nProblem 2");
+        PasswordValidator passwordValidator = new PasswordValidator(INPUT_FILE_2);
+        int validPasswordCount = passwordValidator.getNumberOfValidPasswords();
+        System.out.println("Number of valid passwords " + validPasswordCount);
+        int newlyValidPasswordCount = passwordValidator.getNumberOfNewlyValidPasswords();
+        System.out.println("Number of newly valid passwords " + newlyValidPasswordCount);
 
 
         // Problem 7
