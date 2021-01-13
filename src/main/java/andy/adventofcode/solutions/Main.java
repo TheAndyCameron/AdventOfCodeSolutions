@@ -15,8 +15,10 @@ public class Main {
         // Problem 1
         System.out.println("Problem 1");
         ExpenseReportFixer expenseReportFixer = new ExpenseReportFixer(INPUT_FILE_1);
-        int productOfTwo = expenseReportFixer.productOfNumbersSummingTo2020();
+        int productOfTwo = expenseReportFixer.productOf2NumbersSummingTo2020();
         System.out.println("The product of the 2 numbers that sum to 2020 is " + productOfTwo);
+        int productOfThree = expenseReportFixer.productOf3NumbersSummingTo2020();
+        System.out.println("The product of the 3 numbers that sum to 2020 is " + productOfThree);
 
 
 
